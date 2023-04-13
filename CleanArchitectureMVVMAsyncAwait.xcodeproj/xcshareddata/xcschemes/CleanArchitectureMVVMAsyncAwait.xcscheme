@@ -61,6 +61,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7CF178DF29234C52002811A4"
+               BuildableName = "CleanArchitectureMVVMAsyncAwaitTests.xctest"
+               BlueprintName = "CleanArchitectureMVVMAsyncAwaitTests"
+               ReferencedContainer = "container:CleanArchitectureMVVMAsyncAwait.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -73,6 +83,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "7CD53DEF292286D00018637E"
+            BuildableName = "CleanArchitectureMVVMAsyncAwait.app"
+            BlueprintName = "CleanArchitectureMVVMAsyncAwait"
+            ReferencedContainer = "container:CleanArchitectureMVVMAsyncAwait.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -80,6 +100,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "7CD53DEF292286D00018637E"
+            BuildableName = "CleanArchitectureMVVMAsyncAwait.app"
+            BlueprintName = "CleanArchitectureMVVMAsyncAwait"
+            ReferencedContainer = "container:CleanArchitectureMVVMAsyncAwait.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

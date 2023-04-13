@@ -13,7 +13,6 @@ public protocol MoreUseCaseProtocol {
 }
 
 public class MoreUseCase: DetectDeinit, MoreUseCaseProtocol {
-    
     private let repository: MoreRepository
     
     public init(repository: MoreRepository) {

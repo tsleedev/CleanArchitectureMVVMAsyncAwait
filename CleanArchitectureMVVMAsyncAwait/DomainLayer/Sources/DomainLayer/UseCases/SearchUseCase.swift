@@ -1,6 +1,6 @@
 //
 //  SearchUseCase.swift
-//  CleanArchitectureMVVMAsyncAwait
+//  
 //
 //  Created by TAE SU LEE on 2022/11/15.
 //
@@ -13,7 +13,6 @@ public protocol SearchUseCaseProtocol {
 }
 
 public class SearchUseCase: DetectDeinit, SearchUseCaseProtocol {
-    
     private let repository: SearchRepository
     
     public init(repository: SearchRepository) {

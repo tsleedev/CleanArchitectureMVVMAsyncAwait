@@ -1,6 +1,6 @@
 //  
 //  SettingsAPI.swift
-//  CleanArchitectureMVVMAsyncAwait
+//  
 //
 //  Created by TAE SU LEE on 2023/03/20.
 //
@@ -9,7 +9,7 @@ import TSCore
 import Foundation
 import Moya
 
-public typealias SettingsNetworking = Networking<SettingsAPI>
+public typealias SettingsAPIService = APIService<SettingsAPI>
 
 public enum SettingsAPI {
     case readItems
@@ -17,7 +17,7 @@ public enum SettingsAPI {
 
 extension SettingsAPI: StatusCodeSampleDataTargetType {
     public var baseURL: URL {
-        return URL(string: "about:blank")! // Not used: baseURL is set directly in Networking's initializer
+        return URL(string: "about:blank")! // Not used: baseURL is set directly in APIService's initializer
     }
     
     public var path: String {

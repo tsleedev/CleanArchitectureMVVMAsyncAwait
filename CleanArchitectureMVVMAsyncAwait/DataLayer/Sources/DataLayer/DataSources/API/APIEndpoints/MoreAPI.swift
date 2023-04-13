@@ -8,7 +8,7 @@
 import Foundation
 import Moya
 
-public typealias MoreNetworking = Networking<MoreAPI>
+public typealias MoreAPIService = APIService<MoreAPI>
 
 public enum MoreAPI {
     case readItems
@@ -16,7 +16,7 @@ public enum MoreAPI {
 
 extension MoreAPI: StatusCodeSampleDataTargetType {
     public var baseURL: URL {
-        return URL(string: "about:blank")! // Not used: baseURL is set directly in Networking's initializer
+        return URL(string: "about:blank")! // Not used: baseURL is set directly in APIService's initializer
     }
 
     public var path: String {

@@ -1,6 +1,6 @@
 //
 //  SearchAPI.swift
-//  CleanArchitectureMVVMAsyncAwait
+//  
 //
 //  Created by TAE SU LEE on 2022/11/15.
 //
@@ -9,7 +9,7 @@ import TSCore
 import Foundation
 import Moya
 
-public typealias SearchNetworking = Networking<SearchAPI>
+public typealias SearchAPIService = APIService<SearchAPI>
 
 public enum SearchAPI {
     case readItems(RequestModel.Search)
@@ -17,7 +17,7 @@ public enum SearchAPI {
 
 extension SearchAPI: StatusCodeSampleDataTargetType {
     public var baseURL: URL {
-        return URL(string: "about:blank")! // Not used: baseURL is set directly in Networking's initializer
+        return URL(string: "about:blank")! // Not used: baseURL is set directly in APIService's initializer
     }
     
     public var path: String {

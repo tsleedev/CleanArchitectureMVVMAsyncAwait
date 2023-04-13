@@ -1,6 +1,6 @@
 //
 //  SearchRepositoryImp.swift
-//  CleanArchitectureMVVMAsyncAwait
+//  
 //
 //  Created by TAE SU LEE on 2022/11/16.
 //
@@ -10,18 +10,17 @@ import DomainLayer
 import RxSwift
 
 public class SearchRepositoryImp: DetectDeinit, SearchRepository {
+    private let service: SearchAPIService
     
-    private let network: SearchNetworking
-    
-    public init(network: SearchNetworking) {
-        self.network = network
+    public init(service: SearchAPIService) {
+        self.service = service
     }
     
     public func readItems(_ param: Params.Search) -> Single<Entities.SearchItems> {
         let requestDTO = RequestModel.Search(query: param.query,
                                            page: param.page,
                                            perPage: param.perPage)
-        return network
+        return service
             .request(.readItems(requestDTO))
             .map(ResponseModel.SearchItems.self)
             .map { $0.toDomain() }
